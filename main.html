@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Main Heading -->
+    <header>
+        <h1 role="heading">My Accessible Portfolio</h1>
+    </header>
 
+    <!-- Navigation Section -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Section -->
+    <section>
+        <img src="profile.jpg" alt="A professional portrait of me" role="img">
+        <p id="about">I am a web developer passionate about creating inclusive and accessible websites. My work focuses on responsive design, user-friendly interfaces, and performance optimization.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Portfolio Website</li>
+            <li role="listitem">Project 2: E-commerce Platform</li>
+            <li role="listitem">Project 3: Blogging Platform</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2 role="heading">Contact Me</h2>
+        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+    </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
